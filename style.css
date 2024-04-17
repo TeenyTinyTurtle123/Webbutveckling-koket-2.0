@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.nav {
+    background: fixed;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.nav img {
+    width: 4rem;
+}
+
+.nav .material-symbols-outlined {
+    color: red;
+    font-size: 1.8rem;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1rem;
+}
