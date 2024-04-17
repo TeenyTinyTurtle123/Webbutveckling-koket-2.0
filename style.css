@@ -10,6 +10,8 @@ main {
     margin-top: 4.3rem;
 }
 
+/* nav-menu */
+
 .nav {
     position: fixed;
     top: 0;
@@ -17,6 +19,7 @@ main {
     right: 0;
     height: 4rem;
     background-color: lightgray;
+    color: grey;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,14 +28,75 @@ main {
 
 .nav img {
     width: 4rem;
+    cursor: pointer;
 }
 
 .nav .material-symbols-outlined {
-    color: red;
+    /* color: red; */
     font-size: 1.8rem;
 }
 
 .nav-icons {
     display: flex;
     gap: 1rem;
+}
+
+/* now it trargets both icons, make it each one */
+.nav-icons:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links ul {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.nav-links ul li span {
+    vertical-align: middle;
+}
+
+.smiley-icon {
+    display: none;
+}
+
+@media(min-width: 1024px) {
+
+    .nav-icons {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-links {
+        display: inline-block;
+        color: grey;
+    }
+
+    .nav-links ul li:hover {
+        color: green;
+        cursor: pointer;
+    }
+
+    .smiley-icon {
+        display: inline-block;
+        color: grey;
+        cursor: pointer;
+    }
 }
