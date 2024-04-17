@@ -6,10 +6,6 @@ body {
     margin: 0;
 }
 
-main {
-    margin-top: 4.3rem;
-}
-
 /* nav-menu */
 
 .nav {
@@ -100,3 +96,66 @@ main {
         cursor: pointer;
     }
 }
+
+
+/* header */
+
+.header {
+    border: 1rem solid yellow;
+    /* chat */
+    height: auto;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1rem solid red;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.image-wrapper img {
+    width: 100%;
+    max-height: 21.4rem;
+}
+
+.inner-wrapper {
+    position: absolute;
+    display: flex;
+    max-width: 736px;
+    padding: 24px 0 8px;
+    margin: 0 auto;
+    /* chat */
+    height: auto;
+}
+
+.options {
+    text-align: center;
+    /* chat */
+    height: auto;
+}
+
+.options ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.options ul li {
+    display: inline-block;
+    height: 2rem;
+    background-color: #e76f6f;
+    color: white;
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+
+/* .header-logo {
+    width: 7rem;
+} */
