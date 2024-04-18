@@ -232,9 +232,18 @@ body {
     /* flex-wrap: wrap; */
     margin: auto;
     /* justify-content: center; */
+    gap: 0.5rem;
 }
 
 .big-box {
-    max-width: 50%;
+    max-width: 38rem;
+    max-height: 29rem;
+    border: 2px solid blue;
+    flex: 1;
+}
 
+.big-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
