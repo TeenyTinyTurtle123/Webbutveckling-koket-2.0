@@ -209,7 +209,6 @@ body {
     margin: 0.2rem 0;
 }
 
-
 .big-box img {
     height: 100%;
     width: 100%;
@@ -234,6 +233,25 @@ body {
     border-bottom-right-radius: 0.5rem;
     padding: 0.25rem 0.5rem;
     display: inline-block;
+}
+
+.title-text-sponsored {
+    background-color: #e5b5ac;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+}
+
+.sponsored-tag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #e5b5ac;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 
