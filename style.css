@@ -6,6 +6,10 @@ body {
     margin: 0;
     font-family: "Lexend", sans-serif;
     font-weight: 500;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* nav-menu */
@@ -270,52 +274,23 @@ body {
     border-bottom-right-radius: 0.5rem;
 }
 
-
-/* .smal-box {
-    position: relative;
-    width: 25%;
-    padding-top: 25%;
-
-    border: 2px solid purple;
-}
-
-.smal-box .content {
-    border: 2px solid #284971;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(assets/mjuksproda-hallongrottor.jpg.webp);
-    background-size: cover;
-    background-position: center;
-}
-
-.smal-box .content p {
-    border: 2px solid red;
-    color: white;
-    font-size: 1.2rem;
-    margin: 0;
-} */
-
-
 .smal-box {
     position: relative;
     width: 25%;
     padding-top: 25%;
     /* 25% av bredden för att skapa en kvadratisk container */
-    border: 2px solid green;
     background-image: url(assets/mjuksproda-hallongrottor.jpg.webp);
     background-size: cover;
     background-position: center;
     /* justify-content: center;
     align-items: center; */
-
+    border-radius: 0.5rem;
 }
 
 .smal-text {
     width: 100%;
     background-color: rgba(46, 43, 43, 20%);
+    border-radius: 0.5rem;
 }
 
 .smal-text p {
@@ -330,32 +305,26 @@ body {
 @media(max-width: 650px) {
     .big-box {
         /* Låt varje .big-box ta upp en hel rad */
-        flex: 1 0 100%;
-        /* Bredden på 100% för att ta upp hela raden */
-        max-width: 100%;
 
+        flex: 1 0 calc(100% - 0.4rem);
+
+        /* Bredden på 100% för att ta upp hela raden */
+        max-width: calc(100% - 0.4rem);
+
+        margin: 0.2rem;
     }
 
     .smal-box {
-        flex: 1 0 50%;
-        max-width: 50%;
+        flex: 1 0 calc(50% - 0.4rem);
+        max-width: calc(50% - 0.4rem);
+        margin: 0.2rem;
     }
 }
 
-/* .title-text {
-    position: absolute;
+footer {
+    background-color: #284971;
     color: white;
-    background-color: rgb(72, 126, 62);
-    bottom: 0;
-    left: 0;
-    padding: 0 0.5rem;
-    margin: 0.5rem;
-    border-top-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-}
+    padding: 3rem;
 
-.smal-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-} */
+    margin-top: auto;
+}
