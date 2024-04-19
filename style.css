@@ -90,6 +90,12 @@ body {
     display: none;
 }
 
+.smiley-icon:hover {
+    display: inline-block;
+    color: green;
+    cursor: pointer;
+}
+
 .nav-links li:hover {
     color: green;
     cursor: pointer;
@@ -142,6 +148,10 @@ body {
     display: none;
 }
 
+.header-logo {
+    cursor: pointer;
+}
+
 .search-bar {
     background-color: white;
     box-shadow: 0 0 1.1rem rgba(0, 0, 0, 0.2);
@@ -149,6 +159,10 @@ body {
     height: 3rem;
     border-radius: 1.5rem;
     display: none;
+}
+
+.search-bar:hover {
+    cursor: pointer;
 }
 
 .options {
@@ -175,6 +189,7 @@ body {
     border-radius: 1rem;
     padding: 0 1rem;
     margin: 0.2rem;
+    cursor: pointer;
 }
 
 .options ul li:hover {
@@ -218,9 +233,9 @@ body {
 .big-box {
     flex: 1 0 calc(50% - 0.2rem);
     max-width: calc(50% - 0.2rem);
-    /* max-height: 29rem; */
     position: relative;
     margin: 0.2rem 0;
+    cursor: pointer;
     overflow: hidden;
 }
 
@@ -274,12 +289,14 @@ body {
 /* put the picture as the background, url. Tip from Asaf, hence why it looks different from big-box */
 .smal-box {
     position: relative;
-    width: 25%;
-    padding-top: 25%;
+    width: calc(25% - 0.4rem);
+    padding-top: calc(25% - 0.4rem);
     background-image: url(assets/mjuksproda-hallongrottor.jpg.webp);
     background-size: cover;
     background-position: center;
     border-radius: 0.5rem;
+    margin: 0.2rem;
+    cursor: pointer;
 }
 
 .smal-text {
