@@ -14,7 +14,7 @@ body {
     left: 0;
     right: 0;
     height: 4rem;
-    background-color: lightgray;
+    background-color: white;
     color: grey;
     display: flex;
     justify-content: space-between;
@@ -24,7 +24,7 @@ body {
 }
 
 .nav img {
-    width: 4rem;
+    width: 3.5rem;
     cursor: pointer;
 }
 
@@ -115,6 +115,7 @@ body {
     background-image: url(assets/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 0.8rem;
 }
 
 .header-logo img {
@@ -181,46 +182,41 @@ body {
     .search-bar {
         display: block;
     }
-
-    /* .inner-wrapper {
-        display: block
-    }
-
-    .image-wrapper {
-        display: block;
-    } */
 }
-
 
 /* main */
 
 .main {
-    max-width: 78.6rem;
+    max-width: 60.6rem;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-between;
-    /* gap: 0.5rem; */
+
 }
+
+/* put the picture as the background, url */
 
 .big-box {
-    flex: 1 0 calc(50% - 0.5rem);
     /* Uppdatera flex-reglerna */
-    max-width: calc(50% - 0.5rem);
+    flex: 1 0 calc(50% - 0.2rem);
     /* Uppdatera max-width */
+    max-width: calc(50% - 0.2rem);
     max-height: 29rem;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     position: relative;
-    border-radius: 0.5rem;
-    padding: 1rem 0;
+    /* border-radius: 0.5rem; */
+    margin: 0.2rem 0;
 }
 
-.big-box:hover {}
 
 .big-box img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 0.5rem;
+    /* overflow: hidden;
+    display: inline-block; */
 }
 
 .text-box {
@@ -246,12 +242,11 @@ body {
 
 @media(max-width: 650px) {
     .big-box {
-        flex: 1 0 100%;
         /* Låt varje .big-box ta upp en hel rad */
-        max-width: 100%;
+        flex: 1 0 100%;
         /* Bredden på 100% för att ta upp hela raden */
-        margin-bottom: 0.5rem;
-        /* Lägg till lite mellanrum mellan .big-box på mindre skärmar */
+        max-width: 100%;
+
     }
 }
 
