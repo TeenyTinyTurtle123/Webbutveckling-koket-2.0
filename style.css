@@ -207,6 +207,12 @@ body {
     position: relative;
     /* border-radius: 0.5rem; */
     margin: 0.2rem 0;
+    overflow: hidden;
+}
+
+.big-box:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .big-box img {
