@@ -2,14 +2,18 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: "Lexend", sans-serif;
     font-weight: 500;
-
+    /* these 3 lines are for the footer to stick to the bottom */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 /*____________ nav-menu ____________*/
@@ -40,13 +44,23 @@ body {
 
 .nav-icons {
     display: flex;
+    flex: 1;
+    justify-content: flex-end;
     gap: 1rem;
 }
 
-/* now it trargets both icons, make it each one */
-.nav-icons:hover {
+.nav-icons .search:hover {
     color: green;
     cursor: pointer;
+}
+
+.nav-icons .smiley:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.menu-icon {
+    flex: 1;
 }
 
 .menu-icon:hover {
@@ -76,7 +90,16 @@ body {
     display: none;
 }
 
-@media(min-width: 1024px) {
+.nav-links li:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.nav-links li:hover .material-symbols-outlined {
+    color: inherit;
+}
+
+@media(min-width: 1089px) {
 
     .nav-icons {
         display: none;
@@ -89,11 +112,6 @@ body {
     .nav-links {
         display: inline-block;
         color: grey;
-    }
-
-    .nav-links ul li:hover {
-        color: green;
-        cursor: pointer;
     }
 
     .smiley-icon {
@@ -171,7 +189,7 @@ body {
     background-color: #284971;
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1089px) {
 
     .header {
         height: 30rem;
@@ -200,7 +218,7 @@ body {
 .big-box {
     flex: 1 0 calc(50% - 0.2rem);
     max-width: calc(50% - 0.2rem);
-    max-height: 29rem;
+    /* max-height: 29rem; */
     position: relative;
     margin: 0.2rem 0;
     overflow: hidden;
@@ -277,6 +295,18 @@ body {
     width: 100%;
 }
 
+.smal-box-background-man {
+    background-image: url(assets/kokets-tradgard-kallsida.png.webp);
+}
+
+.smal-box-background-beet {
+    background-image: url(assets/radisor-med-ramsloksaioli.png\ \(1\).webp);
+}
+
+.smal-box-background-textBackground {
+    background-image: url(assets/reminder.png);
+}
+
 @media(max-width: 650px) {
 
     .big-box {
@@ -294,7 +324,6 @@ body {
 
 footer {
     background-color: #eabdc53d;
-    color: white;
     padding: 3rem;
     margin-top: auto;
 }
