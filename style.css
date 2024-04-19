@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
 }
 
-/* nav-menu */
+/*____________ nav-menu ____________*/
 
 .nav {
     position: fixed;
@@ -35,7 +35,6 @@ body {
 }
 
 .nav .material-symbols-outlined {
-    /* color: red; */
     font-size: 1.8rem;
 }
 
@@ -104,13 +103,9 @@ body {
     }
 }
 
-
-/* header */
+/*____________ header____________ */
 
 .header {
-    /* border: 0.5rem solid yellow; */
-    /* chat */
-    height: auto;
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
@@ -127,7 +122,6 @@ body {
 .header-logo img {
     width: 8.4rem;
     display: none;
-
 }
 
 .search-bar {
@@ -141,14 +135,10 @@ body {
 
 .options {
     text-align: center;
-    /* chat */
-    height: auto;
     display: flex;
     flex-wrap: wrap;
-    /* makes the li fall center */
     justify-content: center;
     gap: 0.5rem;
-    /* border: 0.3rem solid red; */
     max-width: 44rem;
 }
 
@@ -183,7 +173,6 @@ body {
 
 @media(min-width: 1024px) {
 
-
     .header {
         height: 30rem;
         width: 100%;
@@ -198,7 +187,7 @@ body {
     }
 }
 
-/* main */
+/*____________ main____________ */
 
 .main {
     max-width: 60.6rem;
@@ -206,20 +195,13 @@ body {
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-between;
-
 }
 
-/* put the picture as the background, url */
-
 .big-box {
-    /* Uppdatera flex-reglerna */
     flex: 1 0 calc(50% - 0.2rem);
-    /* Uppdatera max-width */
     max-width: calc(50% - 0.2rem);
     max-height: 29rem;
-    /* border: 2px solid blue; */
     position: relative;
-    /* border-radius: 0.5rem; */
     margin: 0.2rem 0;
     overflow: hidden;
 }
@@ -234,8 +216,6 @@ body {
     width: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
-    /* overflow: hidden;
-    display: inline-block; */
 }
 
 .text-box {
@@ -244,7 +224,6 @@ body {
     left: 0;
     color: white;
     padding: 0 0.5rem;
-
 }
 
 .title-text {
@@ -274,16 +253,14 @@ body {
     border-bottom-right-radius: 0.5rem;
 }
 
+/* put the picture as the background, url. Tip from Asaf, hence why it looks different from big-box */
 .smal-box {
     position: relative;
     width: 25%;
     padding-top: 25%;
-    /* 25% av bredden för att skapa en kvadratisk container */
     background-image: url(assets/mjuksproda-hallongrottor.jpg.webp);
     background-size: cover;
     background-position: center;
-    /* justify-content: center;
-    align-items: center; */
     border-radius: 0.5rem;
 }
 
@@ -297,20 +274,14 @@ body {
     margin: 0;
     padding: 0.5rem;
     color: white;
-    /* border: 2px solid red; */
     width: 100%;
-
 }
 
 @media(max-width: 650px) {
+
     .big-box {
-        /* Låt varje .big-box ta upp en hel rad */
-
         flex: 1 0 calc(100% - 0.4rem);
-
-        /* Bredden på 100% för att ta upp hela raden */
         max-width: calc(100% - 0.4rem);
-
         margin: 0.2rem;
     }
 
@@ -322,9 +293,8 @@ body {
 }
 
 footer {
-    background-color: #284971;
+    background-color: #eabdc53d;
     color: white;
     padding: 3rem;
-
     margin-top: auto;
 }
