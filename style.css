@@ -4,6 +4,8 @@
 
 body {
     margin: 0;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
 }
 
 /* nav-menu */
@@ -163,8 +165,16 @@ body {
     margin: 0.2rem;
 }
 
+.options ul li:hover {
+    background-color: #760934;
+}
+
 .options ul li.special {
     background: #5d7ba2;
+}
+
+.options ul li.special:hover {
+    background-color: #284971;
 }
 
 @media(min-width: 1024px) {
